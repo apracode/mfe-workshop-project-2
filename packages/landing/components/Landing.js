@@ -70,7 +70,7 @@ export default function Landing() {
               Home
             </Typography>
             <StyledHeroButtons>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={0} justifyContent="center">
                 <Grid item>
                   <Link to="/secondPage">
                     <Button variant="contained" color="primary">
