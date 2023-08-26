@@ -1,6 +1,5 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
@@ -28,17 +27,7 @@ const StyledToolbar = styled(Toolbar)({
   justifyContent: 'space-between',
 });
 
-const StyledButton = styled(Button)(({ theme }) => ({
-  margin: theme.spacing(1, 1.5),
-}));
-
-export default function Header({ signedIn, onSignOut }) {
-  const onClick = () => {
-    if (signedIn && onSignOut) {
-      onSignOut();
-    }
-  };
-
+export default function Header() {
   return (
     <React.Fragment>
       <GlobalStyles />
@@ -53,15 +42,6 @@ export default function Header({ signedIn, onSignOut }) {
           >
             FW Days MFE Workshop
           </Typography>
-          <StyledButton
-            color="primary"
-            variant="outlined"
-            component={RouterLink}
-            to={signedIn ? '/' : '/auth/signin'}
-            onClick={onClick}
-          >
-            {signedIn ? 'Logout' : 'Login'}
-          </StyledButton>
         </StyledToolbar>
       </StyledAppBar>
     </React.Fragment>
