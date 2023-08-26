@@ -57,7 +57,6 @@ export default function Landing() {
     <React.Fragment>
       <GlobalStyles />
       <main>
-        {/* Hero unit */}
         <StyledHeroContent>
           <Container maxWidth="sm">
             <Typography
@@ -83,7 +82,6 @@ export default function Landing() {
           </Container>
         </StyledHeroContent>
         <StyledCardGrid maxWidth="md">
-          {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
@@ -104,13 +102,11 @@ export default function Landing() {
           </Grid>
         </StyledCardGrid>
       </main>
-      {/* Footer */}
       <StyledFooter>
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
       </StyledFooter>
-      {/* End footer */}
     </React.Fragment>
   );
 }
