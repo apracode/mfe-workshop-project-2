@@ -52,7 +52,7 @@ const StyledFooter = styled('footer')(({ theme }) => ({
 
 const cards = [1, 2, 3, 4, 5, 6];
 
-export default function Landing() {
+const Landing = () => {
   return (
     <React.Fragment>
       <GlobalStyles />
@@ -110,3 +110,5 @@ export default function Landing() {
     </React.Fragment>
   );
 }
+
+export default Landing;

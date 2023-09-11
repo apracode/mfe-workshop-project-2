@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
-import LandingApp from './components/LandingApp';
+import Landing from './components/Landing';
 
 export const App = ()=>{
     return (
         <BrowserRouter>
             <div>
                 <Header/>
-                <LandingApp/>
+                <Landing/>
             </div>
         </BrowserRouter>
     )
